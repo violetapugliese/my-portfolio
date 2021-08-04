@@ -1,0 +1,29 @@
+:root {
+    --vp-light: #D8E4E0;
+    --vp-light-50: rgb(216, 228, 224, 0.5);
+    --vp-blue: #27293A;
+    --vp-blue-50: rgb(39, 41, 58, 0.5);
+    --vp-blue-70: rgb(39, 41, 58, 0.7);
+    --vp-green: #4AB878;
+    --vp-green-50: rgb(74, 184, 120, 0.5);
+    --vp-green-70: rgb(74, 184, 120, 0.7);
+    --vp-yellow: #FFAC14;
+    --vp-yellow-50: rgb(255, 172, 20, 0.5);
+    --vp-yellow-70: rgb(255, 172, 20, 0.7);
+    --vp-white: #ffffff;
+  }
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 10px;
+  }
+  .dark-mode {
+      background-color: var(--vp-blue);
+      color: var(--vp-light);
+  }
+  .light-mode {
+      background-color: var(--vp-white);
+      color: var(--vp-blue);
+  }
