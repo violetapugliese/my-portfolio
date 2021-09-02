@@ -1,29 +1,214 @@
 :root {
-    --vp-light: #D8E4E0;
-    --vp-light-50: rgb(216, 228, 224, 0.5);
-    --vp-blue: #27293A;
-    --vp-blue-50: rgb(39, 41, 58, 0.5);
-    --vp-blue-70: rgb(39, 41, 58, 0.7);
-    --vp-green: #4AB878;
-    --vp-green-50: rgb(74, 184, 120, 0.5);
-    --vp-green-70: rgb(74, 184, 120, 0.7);
-    --vp-yellow: #FFAC14;
-    --vp-yellow-50: rgb(255, 172, 20, 0.5);
-    --vp-yellow-70: rgb(255, 172, 20, 0.7);
-    --vp-white: #ffffff;
-  }
-  * {
-    margin: 0;
-    box-sizing: border-box;
-  }
+  --vp-light: #d8e4e0;
+  --vp-light-50: rgb(216, 228, 224, 0.5);
+  --vp-blue: #27293a;
+  --vp-blue-50: rgb(39, 41, 58, 0.5);
+  --vp-blue-70: rgb(39, 41, 58, 0.7);
+  --vp-green: #4ab878;
+  --vp-green-50: rgb(74, 184, 120, 0.5);
+  --vp-green-70: rgb(74, 184, 120, 0.7);
+  --vp-yellow: #ffac14;
+  --vp-yellow-50: rgb(255, 172, 20, 0.5);
+  --vp-yellow-70: rgb(255, 172, 20, 0.7);
+  --vp-white: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+.dark-mode {
+  background-color: var(--vp-blue);
+  color: var(--vp-light);
+}
+.light-mode {
+  background-color: var(--vp-white);
+  color: var(--vp-blue);
+}
+.bg-dark-mode {
+  background-color: var(--vp-blue);
+}
+.bg-light-mode {
+  background-color: var(--vp-blue);
+}
+.page-big-container {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  height: 100vh;
+  /* border: solid #fff 1px; */
+}
+.content-big-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  /* border: solid 1px #fff; */
+}
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  height: 40px;
+}
+.header__dark-mode {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+.header__dark-mode-icon {
+  position: absolute;
+}
+.light-mode-icon {
+  display: none;
+}
+.header__arrow {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.header__arrow-back {
+  position: absolute;
+  left: 0;
+  padding-left: 1rem;
+}
+.header p {
+  font-size: 3rem;
+}
+.header__arrow-up-icon {
+  display: none;
+}
+.header__arrow-down-icon {
+  display: none;
+}
+.header__arrow-back-icon {
+  display: none;
+}
+
+/* Intro */
+.intro {
+  position: relative;
+  top: 0;
+  height: 100vh;
+}
+.intro__text-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.intro__text {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.intro__my-name {
+  font-weight: 700;
+  color: var(--vp-green);
+}
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+}
+.footer__arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+}
+.footer__arrow-down-icon {
+  position: relative;
+  top: 0;
+}
+.footer__arrow p {
+  line-height: 3rem;
+  font-size: 3rem;
+}
+/* Main Menu */
+/* Btns */
+.main {
+  height: 100vh;
+}
+
+.main__menu-btn {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+}
+.menu__title {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.btn-form {
+  position: absolute;
+  border-radius: 1.5rem;
+  height: 3rem;
+}
+.btn-front {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 1;
+}
+.btn-color-profile {
+  background-color: var(--vp-light-50);
+  border: solid 1px var(--vp-light);
+}
+.btn-position-profile-1 {
+  width: 70%;
+}
+.btn-position-profile-2 {
+  bottom: -1.3rem;
+  left: 1rem;
+  width: 115%;
+}
+.border-profile {
+  border: solid 1px var(--vp-light);
+}
+.patch-profile {
+  position: absolute;
+  top: 1rem;
+  left: 1.2rem;
+  width: 56%;
+  height: 2rem;
+}
+.profile__title {
+  left: 1.6rem;
+  top: 0.5rem;
+}
+
+@media (min-width: 768px) {
   html {
-    font-size: 10px;
+    font-size: 15px;
   }
-  .dark-mode {
-      background-color: var(--vp-blue);
-      color: var(--vp-light);
+}
+@media (min-width: 1400px) {
+  html {
+    font-size: 20px;
   }
-  .light-mode {
-      background-color: var(--vp-white);
-      color: var(--vp-blue);
-  }
+}
