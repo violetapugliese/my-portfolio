@@ -22,20 +22,27 @@ html {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
 }
+/* Dark Mode */
 .dark-mode {
   background-color: var(--vp-blue);
   color: var(--vp-light);
+  transition: 0.5s;
 }
 .light-mode {
-  background-color: var(--vp-white);
-  color: var(--vp-blue);
+  background-color: var(--vp-white) !important;
+  color: var(--vp-blue) !important;
 }
 .bg-dark-mode {
   background-color: var(--vp-blue);
 }
 .bg-light-mode {
-  background-color: var(--vp-blue);
+  background-color: var(--vp-blue) !important;
 }
+.none {
+  display: none;
+  transition: 0.5s;
+}
+/* /Dark Mode */
 .page-big-container {
   position: relative;
   left: 0;
@@ -71,9 +78,6 @@ html {
 }
 .header__dark-mode-icon {
   position: absolute;
-}
-.light-mode-icon {
-  display: none;
 }
 .header__arrow {
   position: absolute;
@@ -219,6 +223,10 @@ html {
   background-color: var(--vp-light-50);
   border: solid 1px var(--vp-light);
 }
+.btn-color-profile-dark {
+  background-color: var(--vp-blue-50) !important;
+  border: solid 1px var(--vp-blue) !important;
+}
 .btn-position-profile-1 {
   width: 70%;
 }
@@ -229,6 +237,9 @@ html {
 }
 .border-profile {
   border: solid 1px var(--vp-light);
+}
+.border-profile-dark {
+  border: solid 1px var(--vp-blue) !important;
 }
 .patch-profile {
   position: absolute;
