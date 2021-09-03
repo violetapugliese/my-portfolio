@@ -213,7 +213,7 @@ html {
 }
 /* btn PROFILE */
 .btn-profile {
-  top: 0;
+  top: 20%;
 }
 .btn-color-profile {
   background-color: var(--vp-light-50);
@@ -244,7 +244,7 @@ html {
 /* /btn PROFILE */
 /* btn DEV */
 .btn-dev {
-  top: 10rem;
+  top: 35%;
 }
 .btn-color-dev {
   background-color: var(--vp-yellow-50);
@@ -276,7 +276,7 @@ html {
 /* /btn DEV */
 /* btn art */
 .btn-art {
-  top: 20rem;
+  top: 50%;
 }
 .btn-color-art {
   background-color: var(--vp-green-50);

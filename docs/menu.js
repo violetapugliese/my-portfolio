@@ -18,8 +18,11 @@ function moveBtnDev(){
 }
 function moveBtnProfile(){
         btnProfile.classList.toggle('animation-btn-x');  
-        btnDev.classList.toggle('animation-btn-out')
-        btnArt.classList.toggle('animation-btn-out')
+        setTimeout(() => {
+            btnProfile.classList.toggle('animation-btn-y');  
+            btnDev.classList.toggle('animation-btn-out')
+            btnArt.classList.toggle('animation-btn-out')
+        }, 500)
 
     }
 function moveBtnArt(){
