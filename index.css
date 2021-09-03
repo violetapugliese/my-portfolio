@@ -42,7 +42,7 @@ html {
   margin: 0 auto;
   width: 100%;
   max-width: 700px;
-  height: 100vh;
+  height: 300vh;
   /* border: solid #fff 1px; */
 }
 .content-big-container {
@@ -150,12 +150,21 @@ html {
 /* Btns */
 .main {
   height: 100vh;
+  overflow: hidden;
 }
-
+.main__menu {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 .main__menu-btn {
   position: absolute;
   width: fit-content;
   height: fit-content;
+  transition: 0.5s;
+  left: -1rem;
+  right: 0;
+  margin: 0 auto;
 }
 .menu__title {
   position: relative;
@@ -171,9 +180,39 @@ html {
   position: relative;
   width: fit-content;
   height: fit-content;
-  top: 0.5rem;
-  left: 1rem;
+  cursor: pointer;
+  transform: translate(0.3rem, 0.5rem);
   z-index: 1;
+  transition: ease;
+}
+.btn-front:active{
+  animation: down 0.5s;
+}
+@keyframes down {
+  0% {
+    transform: translate(0.3rem, 0.5rem);
+  }
+  30% {
+    transform: translate(0.1rem, 0.3rem);
+    animation-timing-function: ease;
+  }
+  100%{
+    transform: translate(0.3rem, 0.5rem);
+    animation-timing-function: ease;
+  }
+}
+.animation-btn-x{
+  left: -14rem !important; 
+}
+.animation-btn-y{
+  top: 0 !important; 
+}
+.animation-btn-out{
+  right: -200rem;
+}
+/* btn PROFILE */
+.btn-profile {
+  top: 0;
 }
 .btn-color-profile {
   background-color: var(--vp-light-50);
@@ -201,7 +240,72 @@ html {
   left: 1.6rem;
   top: 0.5rem;
 }
-
+/* /btn PROFILE */
+/* btn DEV */
+.btn-dev {
+  top: 10rem;
+}
+.btn-color-dev {
+  background-color: var(--vp-yellow-50);
+  border: solid 1px var(--vp-yellow-50);
+}
+.btn-position-dev-1 {
+  width: 118%;
+  left: 1rem;
+}
+.btn-position-dev-2 {
+  bottom: -1.3rem;
+  width: 104%;
+}
+.border-dev {
+  border: solid 1px var(--vp-yellow);
+}
+.patch-dev {
+  position: absolute;
+  top: 1rem;
+  left: 1.2rem;
+  width: 90%;
+  height: 2rem;
+}
+.dev__title {
+  color: var(--vp-yellow);
+  left: 1.6rem;
+  top: 0.5rem;
+}
+/* /btn DEV */
+/* btn art */
+.btn-art {
+  top: 20rem;
+}
+.btn-color-art {
+  background-color: var(--vp-green-50);
+  border: solid 1px var(--vp-green-50);
+}
+.btn-position-art-1 {
+  width: 93%;
+  left: 1.8rem;
+}
+.btn-position-art-2 {
+  bottom: -1.3rem;
+  width: 140%;
+}
+.border-art {
+  border: solid 1px var(--vp-green);
+}
+.patch-art {
+  position: absolute;
+  top: 1rem;
+  left: 2.1rem;
+  width: 86%;
+  height: 2rem;
+}
+.art__title {
+  text-align: center;
+  color: var(--vp-green);
+  left: 1.6rem;
+  top: 0.5rem;
+}
+/* /btn art */
 @media (min-width: 768px) {
   html {
     font-size: 15px;
