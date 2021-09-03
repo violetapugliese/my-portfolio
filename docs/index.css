@@ -152,7 +152,7 @@ html {
   height: 100vh;
   overflow: hidden;
 }
-.main__menu {
+.main__menu { 
   position: relative;
   height: 100%;
   width: 100%;
