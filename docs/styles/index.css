@@ -22,26 +22,34 @@ html {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
 /* Dark Mode */
 .dark-mode {
   background-color: var(--vp-blue);
   color: var(--vp-light);
-  transition: 0.5s;
+  transition: 0.3s !important;
 }
 .light-mode {
   background-color: var(--vp-white) !important;
   color: var(--vp-blue) !important;
+  transition: 0.3s !important;
 }
 .bg-dark-mode {
   background-color: var(--vp-blue);
+  transition: 0.3s !important;
 }
 .bg-light-mode {
   background-color: var(--vp-blue) !important;
+  transition: 0.3s !important;
 }
-.none {
-  display: none;
-  transition: 0.5s;
-}
+
 /* /Dark Mode */
 .page-big-container {
   position: relative;
@@ -50,7 +58,8 @@ html {
   margin: 0 auto;
   width: 100%;
   max-width: 700px;
-  height: 300vh;
+  height: 100vh;
+  /* overflow: hidden; */
 }
 .content-big-container {
   position: absolute;
@@ -67,6 +76,7 @@ html {
   position: sticky;
   top: 0;
   height: 40px;
+  z-index: 100;
 }
 .header__dark-mode {
   position: absolute;
@@ -75,9 +85,11 @@ html {
   right: 0;
   padding-top: 1rem;
   padding-right: 1rem;
+  cursor: pointer;
 }
 .header__dark-mode-icon {
   position: absolute;
+  cursor: pointer;
 }
 .header__arrow {
   position: absolute;
@@ -87,24 +99,19 @@ html {
   right: 0;
   margin: 0 auto;
   text-align: center;
+  z-index: 200;
 }
 .header__arrow-back {
   position: absolute;
   left: 0;
   padding-left: 1rem;
+  z-index: 200;
+  cursor: pointer;
 }
 .header p {
-  font-size: 3rem;
+  font-size: 2rem;
 }
-.header__arrow-up-icon {
-  display: none;
-}
-.header__arrow-down-icon {
-  display: none;
-}
-.header__arrow-back-icon {
-  display: none;
-}
+
 
 /* Intro */
 .intro {
@@ -134,7 +141,7 @@ html {
 }
 .footer__arrow {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -144,26 +151,33 @@ html {
 }
 .footer__arrow-down-icon {
   position: relative;
-  top: 0;
+  bottom: 0;
 }
 .footer__arrow p {
-  line-height: 3rem;
-  font-size: 3rem;
+  line-height: 2rem;
+  font-size: 2rem;
 }
 /* Main Menu */
 /* Btns */
 .main {
-  height: 100vh;
+  height: auto;
   overflow: hidden;
 }
 .main__menu { 
-  position: relative;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
+  /* min-width: 320px;
+  max-width: 600px; */
+  transform: translateY(200px);
+  transition: 0.3s;
+  opacity: 0;
 }
 .main__menu-btn {
   position: absolute;
-  width: fit-content;
+  width: 14rem;
   height: fit-content;
   transition: 0.5s;
   left: -1rem;
@@ -176,14 +190,13 @@ html {
   text-transform: uppercase;
   font-weight: 400;
 }
-.btn-form {
+.btn-fo {
   position: absolute;
   border-radius: 1.5rem;
   height: 3rem;
 }
 .btn-front {
   position: relative;
-  width: fit-content;
   height: fit-content;
   cursor: pointer;
   transform: translate(0.3rem, 0.5rem);
@@ -207,10 +220,10 @@ html {
   }
 }
 .animation-btn-x{
-  left: -14rem !important; 
+  left: -7rem !important; 
 }
 .animation-btn-y{
-  top: 0 !important; 
+  top: 10% !important; 
 }
 .animation-btn-out{
   right: -200rem;
@@ -228,12 +241,12 @@ html {
   border: solid 1px var(--vp-blue) !important;
 }
 .btn-position-profile-1 {
-  width: 70%;
+  width: 56%;
 }
 .btn-position-profile-2 {
   bottom: -1.3rem;
   left: 1rem;
-  width: 115%;
+  width: 95%;
 }
 .border-profile {
   border: solid 1px var(--vp-light);
@@ -245,7 +258,7 @@ html {
   position: absolute;
   top: 1rem;
   left: 1.2rem;
-  width: 56%;
+  width: 45%;
   height: 2rem;
 }
 .profile__title {
@@ -255,19 +268,19 @@ html {
 /* /btn PROFILE */
 /* btn DEV */
 .btn-dev {
-  top: 35%;
+  top: 40%;
 }
 .btn-color-dev {
   background-color: var(--vp-yellow-50);
   border: solid 1px var(--vp-yellow-50);
 }
 .btn-position-dev-1 {
-  width: 118%;
+  width: 85%;
   left: 1rem;
 }
 .btn-position-dev-2 {
   bottom: -1.3rem;
-  width: 104%;
+  width: 73%;
 }
 .border-dev {
   border: solid 1px var(--vp-yellow);
@@ -276,7 +289,7 @@ html {
   position: absolute;
   top: 1rem;
   left: 1.2rem;
-  width: 90%;
+  width: 63%;
   height: 2rem;
 }
 .dev__title {
@@ -287,19 +300,19 @@ html {
 /* /btn DEV */
 /* btn art */
 .btn-art {
-  top: 50%;
+  top: 60%;
 }
 .btn-color-art {
   background-color: var(--vp-green-50);
   border: solid 1px var(--vp-green-50);
 }
 .btn-position-art-1 {
-  width: 93%;
+  width: 55%;
   left: 1.8rem;
 }
 .btn-position-art-2 {
   bottom: -1.3rem;
-  width: 140%;
+  width: 80%;
 }
 .border-art {
   border: solid 1px var(--vp-green);
@@ -308,23 +321,31 @@ html {
   position: absolute;
   top: 1rem;
   left: 2.1rem;
-  width: 86%;
+  width: 51%;
   height: 2rem;
 }
 .art__title {
-  text-align: center;
   color: var(--vp-green);
   left: 1.6rem;
   top: 0.5rem;
 }
 /* /btn art */
+@media (min-width: 425px) {
+  .animation-btn-x{
+    left: -16rem !important; 
+  }
+}
 @media (min-width: 768px) {
   html {
     font-size: 15px;
   }
+  .animation-btn-x{
+    left: -22rem !important; 
+  }
 }
 @media (min-width: 1400px) {
   html {
-    font-size: 20px;
+    font-size: 24px;
   }
+
 }

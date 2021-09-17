@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violeta Pugliese</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="./index.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/scroll.css">
 
 </head>
 
@@ -51,71 +52,69 @@
                 </div>
             </div>
             <div class="header__arrow">
-                <div class="header__arrow-down-icon">
-                    <p>↓</p>
-                </div>
-                <div class="header__arrow-up-icon">
-                    <p>↑</p>
-                </div>
+                <button class="header__arrow-up-icon up-one none" id="arrowUpOne" type="button">
+                    <p style="cursor: pointer;">↑</p>
+                </button>
             </div>
-            <div class="header__arrow-back">
+            <div class="header__arrow-back none">
                 <div class="header__arrow-back-icon">
                     <p>←</p>
                 </div>
             </div>
         </header>
-        <div class="content-big-container">
-            <div class="intro">
+        <div class="content-big-container" id="content-big-container">
+            <div id="intro" class="intro slide-in">
                 <div class="intro__text-container">
-                    <h1 class="intro__text">
+                    <h1 class="intro__text" id="introText">
                         <span id="greeting" class=""></span> <br>
-                        Soy <span class="intro__my-name">Violeta Pugliese</span>, Licenciada en Actuación y Desarrolladora de productos digitales. ¡Te doy
+                        Soy <span class="intro__my-name">Violeta Pugliese</span>, Licenciada en Actuación y
+                        Desarrolladora de productos digitales. ¡Te doy
                         la bienvenida a mi portfolio!
                     </h1>
                 </div>
 
             </div>
-            <main class="main">
-                <div class="main__menu ">
+            <main class="main " id="main">
+                <div class="main__menu none">
                     <div class="main__menu-btn btn-profile ">
                         <div class="btn-bg-profile">
-                            <div class="btn-form btn-position-profile-1 btn-color-profile"></div>
-                            <div class="btn-form btn-position-profile-2 btn-color-profile"></div>
+                            <div class="btn-fo btn-position-profile-1 btn-color-profile"></div>
+                            <div class="btn-fo btn-position-profile-2 btn-color-profile"></div>
                         </div>
                         <div class="btn-front-profile btn-front">
-                            <div class="btn-form btn-position-profile-1 bg-dark-mode border-profile"></div>
-                            <div class="btn-form btn-position-profile-2 bg-dark-mode border-profile"></div>
+                            <div class="btn-fo btn-position-profile-1 bg-dark-mode border-profile"></div>
+                            <div class="btn-fo btn-position-profile-2 bg-dark-mode border-profile"></div>
                             <div class="patch-profile bg-dark-mode"></div>
                             <h2 class="menu__title profile__title">Perfil </h2>
-                            <h2 class="menu__title profile__title">&nbsp Profesional</h2>
+                            <h2 class="menu__title profile__title">&nbsp; Profesional</h2>
                         </div>
                     </div>
                     <div class="main__menu-btn btn-dev">
                         <div class="btn-bg-dev">
-                            <div class="btn-form btn-position-dev-1 btn-color-dev"></div>
-                            <div class="btn-form btn-position-dev-2 btn-color-dev"></div>
+                            <div class="btn-fo btn-position-dev-1 btn-color-dev"></div>
+                            <div class="btn-fo btn-position-dev-2 btn-color-dev"></div>
                         </div>
                         <div class="btn-front-dev btn-front">
-                            <div class="btn-form btn-position-dev-1 bg-dark-mode border-dev"></div>
-                            <div class="btn-form btn-position-dev-2 bg-dark-mode border-dev"></div>
+                            <div class="btn-fo btn-position-dev-1 bg-dark-mode border-dev"></div>
+                            <div class="btn-fo btn-position-dev-2 bg-dark-mode border-dev"></div>
                             <div class="patch-dev bg-dark-mode"></div>
-                            <h2 class="menu__title dev__title">&nbsp Productos </h2>
+                            <h2 class="menu__title dev__title">&nbsp; Productos </h2>
                             <h2 class="menu__title dev__title">Digitales</h2>
                         </div>
                     </div>
                     <div class="main__menu-btn btn-art">
                         <div class="btn-bg-art">
-                            <div class="btn-form btn-position-art-1 btn-color-art"></div>
-                            <div class="btn-form btn-position-art-2 btn-color-art"></div>
+                            <div class="btn-fo btn-position-art-1 btn-color-art"></div>
+                            <div class="btn-fo btn-position-art-2 btn-color-art"></div>
                         </div>
                         <div class="btn-front-art btn-front">
-                            <div class="btn-form btn-position-art-1 bg-dark-mode border-art"></div>
-                            <div class="btn-form btn-position-art-2 bg-dark-mode border-art"></div>
+                            <div class="btn-fo btn-position-art-1 bg-dark-mode border-art"></div>
+                            <div class="btn-fo btn-position-art-2 bg-dark-mode border-art"></div>
                             <div class="patch-art bg-dark-mode"></div>
-                            <h2 class="menu__title art__title">Artes</h2>
+                            <h2 class="menu__title art__title">&nbsp; &nbsp; Artes</h2>
                             <h2 class="menu__title art__title">Escénicas</h2>
                         </div>
-                    </div>                      
+                    </div>
                 </div>
                 <div class="main__profile"></div>
                 <div class="main__dev"></div>
@@ -125,15 +124,24 @@
         </div>
         <footer class="footer">
             <div class="footer__arrow">
-                <div class="footer__arrow-down-icon">
-                    <p>↓</p>
-                </div>
+                <button class="footer__arrow-down-icon" type="button" id="arrowDownOne" style="cursor: pointer;">
+                    <p style="cursor: pointer;">↓</p>
+                </button>
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="./dark-mode.js"></script>
-    <script type="text/javascript" src="./menu.js"></script>
-    <!-- <script type="text/javascript" src="./index.js"></script> -->
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Scroll Magic -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <!-- My js -->
+    <script type="text/javascript" src="./js/dark-mode.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/scroll.js"></script>
+    <!-- <script type="text/javascript" src="./js/index.js.js"></script> -->
 </body>
 
 </html>
