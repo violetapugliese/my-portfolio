@@ -9,139 +9,22 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/scroll.css">
 
 </head>
 
 <body id="bodyPage" class="body-page dark-mode">
-    <div class="page-big-container">
-        <header class="header">
-            <div class="header__dark-mode">
-                <div class="header__dark-mode-icon dark-mode-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="10" cy="10" r="10" fill="#27293A" />
-                        <mask id="path-2-inside-1" fill="white">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M19.8758 11.5803C18.965 11.8533 17.9997 12 17 12C11.4772 12 7 7.52286 7 2.00001C7 1.46228 7.04244 0.934452 7.12416 0.419708C3.00307 1.65503 0 5.47682 0 10C0 15.5229 4.47715 20 10 20C14.9851 20 19.1182 16.3523 19.8758 11.5803Z" />
-                        </mask>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.8758 11.5803C18.965 11.8533 17.9997 12 17 12C11.4772 12 7 7.52286 7 2.00001C7 1.46228 7.04244 0.934452 7.12416 0.419708C3.00307 1.65503 0 5.47682 0 10C0 15.5229 4.47715 20 10 20C14.9851 20 19.1182 16.3523 19.8758 11.5803Z"
-                            fill="#FFAC14" />
-                        <path
-                            d="M19.8758 11.5803L20.3696 11.6587L20.4944 10.8729L19.7323 11.1014L19.8758 11.5803ZM7.12416 0.419708L7.61798 0.498106L7.74273 -0.287692L6.9806 -0.059237L7.12416 0.419708ZM19.7323 11.1014C18.8676 11.3606 17.9505 11.5 17 11.5V12.5C18.0488 12.5 19.0625 12.3461 20.0194 12.0593L19.7323 11.1014ZM17 11.5C11.7533 11.5 7.5 7.24672 7.5 2.00001H6.5C6.5 7.799 11.201 12.5 17 12.5V11.5ZM7.5 2.00001C7.5 1.48863 7.54036 0.987015 7.61798 0.498106L6.63035 0.34131C6.54453 0.881888 6.5 1.43592 6.5 2.00001H7.5ZM0.5 10C0.5 5.70372 3.35233 2.07232 7.26773 0.898654L6.9806 -0.059237C2.65382 1.23774 -0.5 5.24992 -0.5 10H0.5ZM10 19.5C4.75329 19.5 0.5 15.2467 0.5 10H-0.5C-0.5 15.799 4.20101 20.5 10 20.5V19.5ZM19.382 11.5019C18.6624 16.0349 14.7354 19.5 10 19.5V20.5C15.2348 20.5 19.5741 16.6697 20.3696 11.6587L19.382 11.5019Z"
-                            fill="#FFAC14" mask="url(#path-2-inside-1)" />
-                    </svg>
-                </div>
-                <div class="header__dark-mode-icon light-mode-icon none">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="10" cy="10" r="10" fill="#FFAC14" />
-                        <mask id="path-2-inside-1" fill="white">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M19.8758 11.5805C18.965 11.8535 17.9997 12.0002 17 12.0002C11.4772 12.0002 7 7.52307 7 2.00023C7 1.46249 7.04244 0.934665 7.12416 0.419922C3.00307 1.65524 0 5.47703 0 10.0002C0 15.5231 4.47715 20.0002 10 20.0002C14.9851 20.0002 19.1182 16.3525 19.8758 11.5805Z" />
-                        </mask>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.8758 11.5805C18.965 11.8535 17.9997 12.0002 17 12.0002C11.4772 12.0002 7 7.52307 7 2.00023C7 1.46249 7.04244 0.934665 7.12416 0.419922C3.00307 1.65524 0 5.47703 0 10.0002C0 15.5231 4.47715 20.0002 10 20.0002C14.9851 20.0002 19.1182 16.3525 19.8758 11.5805Z"
-                            fill="white" />
-                        <path
-                            d="M19.8758 11.5805L20.3696 11.6589L20.4944 10.8731L19.7323 11.1016L19.8758 11.5805ZM7.12416 0.419922L7.61798 0.49832L7.74273 -0.287478L6.9806 -0.0590234L7.12416 0.419922ZM19.7323 11.1016C18.8676 11.3608 17.9505 11.5002 17 11.5002V12.5002C18.0488 12.5002 19.0625 12.3463 20.0194 12.0595L19.7323 11.1016ZM17 11.5002C11.7533 11.5002 7.5 7.24693 7.5 2.00023H6.5C6.5 7.79922 11.201 12.5002 17 12.5002V11.5002ZM7.5 2.00023C7.5 1.48884 7.54036 0.987229 7.61798 0.49832L6.63035 0.341524C6.54453 0.882101 6.5 1.43614 6.5 2.00023H7.5ZM0.5 10.0002C0.5 5.70393 3.35233 2.07253 7.26773 0.898867L6.9806 -0.0590234C2.65382 1.23796 -0.5 5.25013 -0.5 10.0002H0.5ZM10 19.5002C4.75329 19.5002 0.5 15.2469 0.5 10.0002H-0.5C-0.5 15.7992 4.20101 20.5002 10 20.5002V19.5002ZM19.382 11.5021C18.6624 16.0351 14.7354 19.5002 10 19.5002V20.5002C15.2348 20.5002 19.5741 16.6699 20.3696 11.6589L19.382 11.5021Z"
-                            fill="#FFAC14" mask="url(#path-2-inside-1)" />
-                    </svg>
-                </div>
-            </div>
-            <div class="header__arrow">
-                <button class="header__arrow-up-icon up-one none" id="arrowUpOne" type="button">
-                    <p style="cursor: pointer;">↑</p>
-                </button>
-            </div>
-            <div class="header__arrow-back none">
-                <div class="header__arrow-back-icon">
-                    <p>←</p>
-                </div>
-            </div>
-        </header>
-        <div class="content-big-container" id="content-big-container">
-            <div id="intro" class="intro slide-in">
-                <div class="intro__text-container">
-                    <h1 class="intro__text" id="introText">
-                        <span id="greeting" class=""></span> <br>
-                        Soy <span class="intro__my-name">Violeta Pugliese</span>, Licenciada en Actuación y
-                        Desarrolladora de productos digitales. ¡Te doy
-                        la bienvenida a mi portfolio!
-                    </h1>
-                </div>
-
-            </div>
-            <main class="main " id="main">
-                <div class="main__menu none">
-                    <div class="main__menu-btn btn-profile ">
-                        <div class="btn-bg-profile">
-                            <div class="btn-fo btn-position-profile-1 btn-color-profile"></div>
-                            <div class="btn-fo btn-position-profile-2 btn-color-profile"></div>
-                        </div>
-                        <div class="btn-front-profile btn-front">
-                            <div class="btn-fo btn-position-profile-1 bg-dark-mode border-profile"></div>
-                            <div class="btn-fo btn-position-profile-2 bg-dark-mode border-profile"></div>
-                            <div class="patch-profile bg-dark-mode"></div>
-                            <h2 class="menu__title profile__title">Perfil </h2>
-                            <h2 class="menu__title profile__title">&nbsp; Profesional</h2>
-                        </div>
-                    </div>
-                    <div class="main__menu-btn btn-dev">
-                        <div class="btn-bg-dev">
-                            <div class="btn-fo btn-position-dev-1 btn-color-dev"></div>
-                            <div class="btn-fo btn-position-dev-2 btn-color-dev"></div>
-                        </div>
-                        <div class="btn-front-dev btn-front">
-                            <div class="btn-fo btn-position-dev-1 bg-dark-mode border-dev"></div>
-                            <div class="btn-fo btn-position-dev-2 bg-dark-mode border-dev"></div>
-                            <div class="patch-dev bg-dark-mode"></div>
-                            <h2 class="menu__title dev__title">&nbsp; Productos </h2>
-                            <h2 class="menu__title dev__title">Digitales</h2>
-                        </div>
-                    </div>
-                    <div class="main__menu-btn btn-art">
-                        <div class="btn-bg-art">
-                            <div class="btn-fo btn-position-art-1 btn-color-art"></div>
-                            <div class="btn-fo btn-position-art-2 btn-color-art"></div>
-                        </div>
-                        <div class="btn-front-art btn-front">
-                            <div class="btn-fo btn-position-art-1 bg-dark-mode border-art"></div>
-                            <div class="btn-fo btn-position-art-2 bg-dark-mode border-art"></div>
-                            <div class="patch-art bg-dark-mode"></div>
-                            <h2 class="menu__title art__title">&nbsp; &nbsp; Artes</h2>
-                            <h2 class="menu__title art__title">Escénicas</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="main__profile"></div>
-                <div class="main__dev"></div>
-                <div class="main__art"></div>
-            </main>
-            <div class="contact"></div>
+    <div class="portfolio__container">
+        <div class="section tab main"><button class="section__button" id="main-btn" onclick="mainActivate(main)">Buenas tardes</button></div>
+        <div class="section tab profile"><button class="section__button" id="profile-btn" onclick="profileActivate(profile)">Perfil Profesional</button></div>
+        <div class="section tab dev"><button class="section__button" id="dev-btn" onclick="devActivate(dev)">Desarrollo IT</button></div>
+        <div class="section tab art"><button class="section__button" id="art-btn" onclick="artActivate(art)">Artes Escénicas</button></div>
+        <div class="section tab contact"><button class="section__button" id="contact-btn" onclick="contactActivate(contact)">Contacto</button>
         </div>
-        <footer class="footer">
-            <div class="footer__arrow">
-                <button class="footer__arrow-down-icon" type="button" id="arrowDownOne" style="cursor: pointer;">
-                    <p style="cursor: pointer;">↓</p>
-                </button>
-            </div>
-        </footer>
     </div>
-    <!-- JQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- Scroll Magic -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
-    <!-- My js -->
-    <script type="text/javascript" src="./js/dark-mode.js"></script>
-    <script type="text/javascript" src="./js/menu.js"></script>
-    <script type="text/javascript" src="./js/scroll.js"></script>
-    <!-- <script type="text/javascript" src="./js/index.js.js"></script> -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
