@@ -46,6 +46,7 @@ button {
 /* /Dark Mode */
 
 .portfolio__container {
+  position: relative;
   height: 100vh;
   overflow: hidden;
 }
